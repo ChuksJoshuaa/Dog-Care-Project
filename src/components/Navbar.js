@@ -17,15 +17,18 @@ const Navbar = () => {
       <header role="banner" id="nav">
         <nav className="navbar navbar-expand-md navbar-grey bg-dark">
           <div className="container">
-            <img
-              className="image-top"
-              src={logo}
-              style={{ width: "50px" }}
-              alt="logo"
-            />
-            <span className="spanner">
-              Dog<span style={{ color: "red" }}>go</span>
-            </span>
+            <Link to="/">
+              <img
+                className="image-top"
+                src={logo}
+                style={{ width: "50px" }}
+                alt="logo"
+              />
+              <span className="spanner">
+                Dog<span style={{ color: "red" }}>go</span>
+              </span>
+            </Link>
+
             <button
               className="navbar-toggler"
               type="button"

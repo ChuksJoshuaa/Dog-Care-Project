@@ -7,7 +7,7 @@ import {
   GET_DOG_SUCCESS,
   GET_DOG_ERROR,
   HANDLE_SEARCH,
-} from "../files";
+} from "../constant/actionTypes";
 
 const initialState = {
   dogs_loading: false,
@@ -25,17 +25,15 @@ export const DoggoProvider = ({ children }) => {
     console.log("yes");
   };
 
-  // url: "https://dog-breeds2.p.rapidapi.com/dog_breeds/breed/Aidi",
-
   const getDogs = () => {
     dispatch({ type: GET_DOG_BEGIN });
 
     const options = {
       method: "GET",
-      url: `https://dog-breeds2.p.rapidapi.com/dog_breeds/breed/${state.searchTerm}`,
+      url: `https://${process.env.REACT_APP_RAPID_HOST}/dog_breeds/breed/${state.searchTerm}`,
       headers: {
-        "x-rapidapi-host": "dog-breeds2.p.rapidapi.com",
-        "x-rapidapi-key": "ffb3cf767fmsh0481669230cd7afp1c729cjsn746ff923ed8e",
+        "x-rapidapi-host": `${process.env.REACT_APP_RAPID_HOST}`,
+        "x-rapidapi-key": `${process.env.REACT_APP_RAPID_KEY}`,
       },
     };
     axios

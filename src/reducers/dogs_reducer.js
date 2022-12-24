@@ -3,7 +3,7 @@ import {
   GET_DOG_SUCCESS,
   GET_DOG_ERROR,
   HANDLE_SEARCH,
-} from "../files";
+} from "../constant/actionTypes";
 
 const dogs_reducer = (state, action) => {
   if (action.type === GET_DOG_BEGIN) {

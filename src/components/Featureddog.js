@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { data } from "../tools";
+import { data } from "../utils/tools";
 import Blog from "./Blog";
 
 const Featureddog = () => {
-  const [datas, setDatas] = useState(data);
+  const [datas, _setDatas] = useState(data);
 
   return (
     <Wrapper>

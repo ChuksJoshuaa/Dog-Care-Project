@@ -6,7 +6,6 @@ import AOS from "aos";
 import PureCounter from "@srexi/purecounterjs";
 
 function App() {
-  const pure = new PureCounter();
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -19,21 +18,18 @@ function App() {
     });
     AOS.refresh();
 
-    new PureCounter();
+    // new PureCounter({
+    //   duration: 2,
+    //   delay: 10,
+    //   repeat: true,
+    //   decimals: 0,
+    //   legacy: true,
+    //   filesizing: false,
+    //   currency: false,
+    //   separator: false,
+    // });
 
-    new PureCounter({
-      // start: 0,
-      // end: 100,
-      duration: 2,
-      delay: 10,
-      once: false,
-      repeat: false,
-      decimals: 0,
-      legacy: true,
-      filesizing: false,
-      currency: false,
-      separator: false,
-    });
+    new PureCounter();
   }, []);
   return (
     <Router>

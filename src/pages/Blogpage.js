@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Blog } from "../components";
-import { data } from "../tools";
+import { data } from "../utils/tools";
 
 const Blogpage = () => {
-  const [datas, setDatas] = useState(data);
+  const [datas, _setDatas] = useState(data);
   return (
     <Wrapper>
       <div className="oga">

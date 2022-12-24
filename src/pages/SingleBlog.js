@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import slugify from "slugify";
 import styled from "styled-components";
-import { data } from "../tools";
+import { data } from "../utils/tools";
 import { FaUsers, FaClock } from "react-icons/fa";
 const SingleBlog = () => {
-  const [datas, setDatas] = useState(data);
+  const [datas, _setDatas] = useState(data);
   const { slug } = useParams();
   const instance = datas.filter((item) => slugify(item.name) === slug);
   return (
