@@ -6,7 +6,7 @@ import {
   FaTwitter,
   FaArrowUp,
 } from "react-icons/fa";
-import logo from "../static/images/logo.jpg";
+import logo from "../utils/images/logo.jpg";
 
 const Footer = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

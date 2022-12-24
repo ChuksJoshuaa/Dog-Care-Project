@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import image from "../static/images/dog5.jpg";
+import image from "../utils/images/dog5.jpg";
 
 const Breed = () => {
   return (
@@ -34,6 +34,7 @@ const Breed = () => {
     </Wrapper>
   );
 };
+
 const Wrapper = styled.div`
   margin-top: 5%;
 
@@ -144,13 +145,11 @@ const Wrapper = styled.div`
     }
   }
 
-   @media screen and (max-width: 325px) {
+  @media screen and (max-width: 325px) {
     /* .breed-second img {
       width: 250px;
       margin: 0 auto;
     } */
-  }
-
   }
 `;
 

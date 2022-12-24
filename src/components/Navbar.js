@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../static/images/logo.jpg";
+import logo from "../utils/images/logo.jpg";
 import { FaFax, FaHome, FaAnchor, FaDog, FaBook } from "react-icons/fa";
 const Navbar = () => {
   return (

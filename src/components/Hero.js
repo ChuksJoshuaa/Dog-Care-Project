@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import image1 from "../static/images/dog22.webp";
-import image2 from "../static/images/dog11.jpg";
-import image3 from "../static/images/dog00.jpg";
+import image1 from "../utils/images/dog22.webp";
+import image2 from "../utils/images/dog11.jpg";
+import image3 from "../utils/images/dog00.jpg";
 import { FaOdnoklassniki } from "react-icons/fa";
 import { FaRedhat } from "react-icons/fa";
 import { FaStaylinked } from "react-icons/fa";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import reviews from "../utils/review";
-import dog from "../static/images/dog99.jpg";
+import dog from "../utils/images/dog99.jpg";
 
 const Review = () => {
   const [index, setIndex] = useState(0);
