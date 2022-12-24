@@ -17,13 +17,8 @@ const Navbar = () => {
       <header role="banner" id="nav">
         <nav className="navbar navbar-expand-md navbar-grey bg-dark">
           <div className="container">
-            <Link to="/">
-              <img
-                className="image-top"
-                src={logo}
-                style={{ width: "50px" }}
-                alt="logo"
-              />
+            <Link to="/" className="linky">
+              <img className="image-top" src={logo} alt="logo" />
               <span className="spanner">
                 Dog<span style={{ color: "red" }}>go</span>
               </span>
@@ -85,10 +80,15 @@ const Navbar = () => {
   );
 };
 const Wrapper = styled.section`
+  .linky {
+    text-decoration: none;
+    text-transform: none;
+  }
   .spanner {
     font-family: "Great Vibes", cursive;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: white;
+    margin-left: 0.2rem;
   }
 
   .navy {
