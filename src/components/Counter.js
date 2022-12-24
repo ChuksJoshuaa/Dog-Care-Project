@@ -21,11 +21,11 @@ const Counter = () => {
               <div className="counter-cell">
                 <div
                   data-purecounter-start="0"
-                  data-purecounter-end="30"
+                  data-purecounter-end="6"
                   data-purecounter-duration="20"
                   className="purecounter"
                 >
-                  1
+                  6
                 </div>
                 <span style={{ marginLeft: "1em" }}></span>
                 <div className="counter-info">
@@ -36,11 +36,11 @@ const Counter = () => {
               <div className="counter-cell">
                 <div
                   data-purecounter-start="0"
-                  data-purecounter-end="300"
+                  data-purecounter-end="20"
                   data-purecounter-duration="18"
                   className="purecounter"
                 >
-                  1
+                  20
                 </div>
                 <span style={{ marginLeft: "1em" }}></span>
                 <div className="counter-info">
@@ -51,11 +51,11 @@ const Counter = () => {
               <div className="counter-cell">
                 <div
                   data-purecounter-start="0"
-                  data-purecounter-end="5000"
+                  data-purecounter-end="200"
                   data-purecounter-duration="15"
                   className="purecounter"
                 >
-                  1
+                  200
                 </div>
                 <span style={{ marginLeft: "1em" }}></span>
                 <div className="counter-info">

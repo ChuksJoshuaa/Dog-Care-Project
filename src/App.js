@@ -1,12 +1,21 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components";
-import { Home, About, Dog, Error, SingleBlog, Blog, Contact } from "./pages";
+import {
+  Home,
+  About,
+  Dog,
+  Errorpage,
+  SingleBlog,
+  Blog,
+  Contact,
+} from "./pages";
 import AOS from "aos";
 import PureCounter from "@srexi/purecounterjs";
 
 function App() {
   useEffect(() => {
+    new PureCounter();
     AOS.init({
       duration: 2000,
       delay: 0,
@@ -17,20 +26,7 @@ function App() {
       anchorPlacement: "top-bottom",
     });
     AOS.refresh();
-
-    // new PureCounter({
-    //   duration: 2,
-    //   delay: 10,
-    //   repeat: true,
-    //   decimals: 0,
-    //   legacy: true,
-    //   filesizing: false,
-    //   currency: false,
-    //   separator: false,
-    // });
-
-    new PureCounter();
-  }, []);
+  });
   return (
     <Router>
       <Navbar />
@@ -52,7 +48,7 @@ function App() {
         </Route>
         <Route exact path="/blogs/:slug" children={<SingleBlog />} />
         <Route path="*">
-          <Error />
+          <Errorpage />
         </Route>
       </Switch>
       <Footer />
